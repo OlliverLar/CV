@@ -1,0 +1,40 @@
+h1 {
+    background-color: #ffffff;
+    margin-right: 500px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+p{
+    background-color: #FFFFFF;
+    margin-right: 684px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 25px;
+}
+body {
+    background-image: linear-gradient(-90deg, #0d114d,#1cd2ff);
+}
+button {
+    background-color: #FFFFFF;
+    outline: 0;
+    border-style: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: lightgoldenrodyellow;
+    background-color: #0d114d;
+}
+#inputToDo {
+    border-radius: 50px;
+    border-style: none;
+    padding: 5px;
+    outline: 0;
+
+}
+.completed {
+    text-decoration: line-through;
+    color: darkgrey;
+}
