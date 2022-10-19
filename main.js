@@ -9,6 +9,8 @@ let text;
 let message;
 let completedCount = 0;
 
+
+
 addBtn.addEventListener(
     "click",
 
@@ -18,12 +20,12 @@ addBtn.addEventListener(
         msg.innerHTML = "OBS! Skriv något först!"
         return;
         }
+        input.value = "";
         msg.innerHTML = "";
-
         const todoObject = {};
         todoObject.todo = text;
         todoArr.push(todoObject);
-
+        
 
         const item = document.createElement("li");
         list.appendChild(item);
@@ -39,10 +41,11 @@ addBtn.addEventListener(
             function() {
                 item.setAttribute("class", "completed");
                 completedCount++;
-            showCompleted.innerText = completedCount + " completed";
+                showCompleted.innerText = completedCount + " completed";
             }
         )
     }
+    
     
 
 )
