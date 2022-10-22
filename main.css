@@ -1,4 +1,9 @@
 h1 {
+    min-width: 200px;
+    min-height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
     background-color: rgb(138, 138, 138);
     color: rgb(109, 109, 109);
     -webkit-text-stroke: 1px #25343f;
@@ -13,9 +18,8 @@ h1 {
     animation: float 6s ease-in-out infinite;
     transition: 0.6s;
 }
-
 p {
-    font-size: larger;
+    font-size: x-large;
     color: rgb(150, 171, 190);
     margin: 15px;
     padding: 10px;
@@ -34,10 +38,10 @@ body {
 .secondWindow {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #425263;
-    min-width: 300px;
+    min-width: 400px;
+    min-height: 500px;
     margin: 25px;
     padding: 10px;
     border-radius: 10px;
@@ -46,67 +50,12 @@ body {
     border-width: 5px;
     transition: 1s;
 
-}
-button {
-    outline: 0;
-    border-style: none;
-    border-radius: 50px;
-    cursor: pointer;
-    max-width: 50px;
-}
-#inputToDo {
-    border-radius: 50px;
-    border-style: none;
-    padding: 5px;
-    outline: 0;
-    max-width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
-}
-.completed {
-    text-decoration: line-through;
-    color: black;
-}
-li {
-    background-color: silver;
-    background-size: auto;
-    margin: 3px;
-    padding-left: 2px;
-    padding-right: 2px;
-    border-style: outset;
-    cursor: pointer;
-    transition: 0.5s;
-    animation: listItems 0.1s ease-in-out;
-}
-#message {
-    animation-name: flash;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    color: red;
-}
-
-button:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(196, 196, 196);
-}
-li:hover {
-    transform: scale(1.1);
-}
-h1:hover {
-    color: #636363;
-    -webkit-text-stroke: 1px #080808;
-    transition: 0.6s;
-}
+}   
 .secondWindow:hover {
     transition: 0.5s;
     border-color: #636363;
     transform: scale(1.05);
     box-shadow: 10px 5px 15px 0px #363636;
-}
-#inputToDo:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
 }
 @keyframes float {
     0% {
@@ -122,42 +71,3 @@ h1:hover {
       transform: translatey(0px);
     }
 }
-@keyframes flash {
-    0% {
-        color: red;
-    }
-    25% {
-        color: transparent;
-    }
-    50% {
-        color: red
-    }
-    75% {
-        color: transparent;
-    }
-    100% {
-        color: red;
-    }
-}
-  @keyframes startUp {
-    0% {
-              transform: translateY(-1000px);
-      opacity: 0;
-    }
-    50% {
-              transform: translateY(50px);
-      opacity: 1;
-    }
-    100% {
-        transform: translateY(0px);
-    opacity: 1;
-    }
-  }
-  @keyframes listItems {
-    0% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-  }
